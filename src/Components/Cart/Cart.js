@@ -21,7 +21,7 @@ const Cart = ({cart}) => {
         <div className='cart'>
             <h4>Order summery in cart</h4>
             <p>Selected items:{quantity}</p>
-            <p>Total price: ${total}</p>
+            <p>Total prices: ${total}</p>
             <p>Total Shipping: ${shipping}</p>
             <p>Tax: ${tax}</p>
             <h5>Grand Total: ${grandTotal}</h5>
