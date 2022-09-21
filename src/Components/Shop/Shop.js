@@ -3,17 +3,12 @@ import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
 import { addToDb, getStoredCart } from '../../utilities/fakedb'; 
+import useProducts from '../../hooks/useProducts';
 
 const Shop = () => {
-    const [products, setProduct]=useState([]);
+    const [products, setProduct]=useProducts();
     const [cart, setCart]=useState([]);
     // console.log(cart)
-
-    useEffect(()=>{
-        fetch('products.json')
-        .then(res=>res.json())
-        .then(data=>setProduct(data))
-    },[]);
 
     useEffect(()=>{
         const storedCart=getStoredCart();
