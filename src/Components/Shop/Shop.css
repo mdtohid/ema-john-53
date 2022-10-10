@@ -3,7 +3,7 @@
     grid-template-columns: 4fr 1fr;
 }
 
-.product-container{
+.products-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 45px;
@@ -21,7 +21,7 @@
         grid-template-columns: 3fr 1fr;
     }
     
-    .product-container{
+    .products-container{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5px;
         margin: 25px 10px;

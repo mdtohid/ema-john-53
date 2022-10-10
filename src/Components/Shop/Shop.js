@@ -23,7 +23,7 @@ const Shop = () => {
             savedCart.push(addedProduct);
            }
             }
-            // console.log(savedCart);
+            console.log(savedCart);
             setCart(savedCart);
     },[products]);
 
@@ -46,7 +46,7 @@ const Shop = () => {
 
     return (
         <div className='shop-container'>
-            <div className="product-container">
+            <div className="products-container">
                 {
                     products.map(product=><Product key={product.id} product={product} handleAddToCart={handleAddToCart}></Product>)
                 }
